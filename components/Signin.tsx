@@ -20,7 +20,7 @@ export const SigninComponent = () =>
                 <div className="pt-2">
                     <LabelledInput label="Username" placeholder="harkirat@gmail.com" />
                     <LabelledInput label="Password" type={"password"} placeholder="123456" />
-                    
+                    <Button />
                 </div>
             </div>
         </a>
