@@ -1,7 +1,9 @@
 import axios from "axios";
 
 async function getUserDetails() {
-  const response = await axios.get("https://week-13-offline.kirattechnologies.workers.dev/api/v1/user/details")
+  const response = await axios.get("http://localhost:3000/api/user")
+  // const response = await axios.get("http://localhost:3000/api/user")
+  // Do the above is wrong because you are calling your nextjs server from your nextjs server
   return response.data;
 }
 
@@ -15,7 +17,7 @@ export default async function Home() {
       hi there
       <aside>
       <h1>{userDetails?.email}</h1>
-      {userDetails?.name}
+      {userDetails?.username}
       </aside>
     </div>
   );
